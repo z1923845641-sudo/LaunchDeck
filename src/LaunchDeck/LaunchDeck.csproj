@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><TargetFramework>net48</TargetFramework><UseWPF>true</UseWPF><RootNamespace>LaunchDeck</RootNamespace><AssemblyName>LaunchDeck</AssemblyName><ApplicationIcon>..\..\assets\LaunchDeck.ico</ApplicationIcon><LangVersion>7.3</LangVersion><Nullable>disable</Nullable><Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup><GenerateAssemblyInfo>false</GenerateAssemblyInfo></PropertyGroup>
+  <ItemGroup><Reference Include="System.Web.Extensions" /></ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\assets\logo.png" Link="Assets\logo.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\assets\LaunchDeck.ico" Link="Assets\LaunchDeck.ico" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\assets\chatgpt.png" Link="Assets\chatgpt.png" CopyToOutputDirectory="PreserveNewest" Condition="Exists('..\..\assets\chatgpt.png')" />
+    <Content Include="..\..\assets\apps.json" Link="Data\apps.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

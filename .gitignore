@@ -1,0 +1,13 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.tmp
+release/
+*.zip
+self-test.json
+self-test-error.txt
+preferences.json
+catalog.xml
+icons/
